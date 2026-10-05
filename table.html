@@ -1,0 +1,211 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>5th Sem Timetable</title>
+
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th {
+            background-color: rgb(0, 192, 250);
+        }
+
+        tr:nth-child(even) {
+            background-color: #D6EEEE;
+        }
+
+        table,
+        tr,
+        th,
+        td {
+            border: 1px solid black;
+            padding: 15px;
+            text-align: center;
+        }
+
+        /* Header row */
+        table tr:first-child {
+            background-color: rgb(0, 192, 250);
+        }
+
+        .lab {
+            background-color: brown;
+            color: white;
+            font-weight: bold;
+        }
+
+        .break {
+            background-color: grey;
+            color: white;
+            font-weight: bold;
+        }
+
+        .project {
+            background-color: aqua;
+            font-weight: bold;
+        }
+
+        .yoga {
+            background-color: lightgreen;
+            font-weight: bold;
+        }
+
+        h1 {
+            text-align: center;
+            color: purple;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>5TH SEM TIMETABLE</h1>
+
+    <table>
+
+        <!-- Header -->
+        <tr>
+            <th>DAY/TIME</th>
+            <th>8:00 to 9:00</th>
+            <th>9:00 to 10:00</th>
+            <th>10:00 to 10:30</th>
+            <th>10:30 to 11:30</th>
+            <th>11:30 to 12:30</th>
+            <th>12:30 to 1:30</th>
+            <th>1:30 to 2:30</th>
+            <th>2:30 to 3:30</th>
+            <th>3:30 to 4:30</th>
+            <th>4:30 to 5:30</th>
+        </tr>
+
+        <!-- Monday -->
+        <tr>
+            <th>Monday</th>
+            <td></td>
+            <td></td>
+            <td rowspan="6" class="break">BREAK</td>
+            <td>EVS</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+
+        <!-- Tuesday -->
+        <tr>
+            <th>Tuesday</th>
+            <td colspan="2" class="lab">WT/CNS LAB</td>
+            <td>RM</td>
+            <td>AI</td>
+            <td></td>
+            <td>SE</td>
+            <td>TOC</td>
+            <td>RM</td>
+            <td></td>
+        </tr>
+
+        <!-- Wednesday -->
+        <tr>
+            <th>Wednesday</th>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>TOC</td>
+            <td>AI</td>
+            <td>SE</td>
+            <td>RM</td>
+            <td></td>
+        </tr>
+
+        <!-- Thursday -->
+        <tr>
+            <th>Thursday</th>
+            <td colspan="2" class="lab">WT/CNS LAB</td>
+            <td>TOC</td>
+            <td>SE</td>
+            <td>CNS</td>
+            <td></td>
+            <td></td>
+            <td colspan="2" class="project">MINI PROJECT</td>
+        </tr>
+
+        <!-- Friday -->
+        <tr>
+            <th>Friday</th>
+            <td class="yoga">YOGA</td>
+            <td>SE</td>
+            <td>CNS</td>
+            <td></td>
+            <td>RM</td>
+            <td>AI</td>
+            <td>RM</td>
+            <td></td>
+            <td></td>
+        </tr>
+
+        <!-- Saturday -->
+        <tr>
+            <th>Saturday</th>
+            <td></td>
+            <td></td>
+            <td colspan="2" class="project">MINI PROJECT</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+
+    </table>
+
+</body>
+</html>
+```
+
+### Upload it to your GitHub repository
+
+Since your GitHub username is **`VARUN0600`**, if your repository is, for example, `timetable`, the repository URL will be:
+
+```text
+https://github.com/VARUN0600/timetable
+```
+
+In VS Code, put the code above in:
+
+```text
+timetable/
+└── index.html
+```
+
+Then open the terminal **inside the `timetable` folder** and run:
+
+```bash
+git init
+git add .
+git commit -m "Add 5th semester timetable"
+git branch -M main
+git remote add origin https://github.com/VARUN0600/timetable.git
+git push -u origin main
+```
+
+If your repository has a **different name**, replace `timetable` in the URL with your actual repository name.
+
+**Important:** If you already ran `git init` and `git remote add origin` for this folder earlier, don't repeat those commands. Just use:
+
+```bash
+git add .
+git commit -m "Update timetable"
+git push
+```
+
+After pushing, I can also show you how to make this timetable **live as a website using GitHub Pages**, so you can open it with a normal URL.
